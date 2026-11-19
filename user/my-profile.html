@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - NBFI</title>
+    <link rel="stylesheet" href="./css/user-dashboard.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <!-- Font Awesome 6.5.1 Stable -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+       <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>NBFI</h2>
+            <p class="menu-title">USER MENU</p>
+
+            <nav>
+                <a href="user-dashboard.html" ><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="my-reports.html"><i class="fas fa-newspaper"></i> My Reports</a>
+                <a href="my-petitions.html"><i class="fas fa-file-alt"></i> My Petitions</a>
+                <a href="land-auctions.html"> <i class="fas fa-landmark"></i> Land Auctions</a>
+                <a href="my-profile.html" class="active"><i class="fa-solid fa-user"></i> My profile</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="../html/index.html" class="view-website">View Website</a>
+            </nav>
+
+            <a href="#" class="logout" id="logoutBtn"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header>
+                <div>
+                    <h1>My Profile</h1>
+                    <p>Manage your account information and security settings.</p>
+                </div>
+
+                <div class="profile">
+                    <div class="profile-icon" id="profileIcon">U</div>
+                    <span id="profileName">User Account</span>
+                </div>
+            </header>
+
+
+            <!-- Profile Overview -->
+            <section class="profile-overview">
+
+                <div class="profile-avatar-block">
+                    <div class="profile-avatar" id="profileAvatar">U</div>
+                </div>
+
+                <div class="profile-identity">
+                    <h2 id="displayName">User Account</h2>
+                    <p id="displayEmail">user@example.com</p>
+                    <p class="member-since">Member since <span id="memberSince">—</span></p>
+                    <span class="badge verified" id="verifiedBadge">Verified Account</span>
+                </div>
+
+            </section>
+
+
+            <!-- Personal Info -->
+            <section class="profile-section">
+                <h2 class="section-title">Personal Info</h2>
+
+                <form class="profile-form">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" name="location" placeholder="City, Country">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bio">About Me</label>
+                        <textarea id="bio" name="bio" rows="4"
+                            placeholder="Tell us a little about yourself..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Save Changes</button>
+                        <button type="reset" class="btn-secondary">Reset</button>
+                    </div>
+
+                </form>
+            </section>
+
+
+            <!-- Security -->
+            <section class="profile-section">
+                <h2 class="section-title">Security</h2>
+
+                <form class="profile-form">
+                    <h3>Change Password</h3>
+
+                    <div class="form-group">
+                        <label for="currentPassword">Current Password</label>
+                        <input type="password" id="currentPassword" name="currentPassword" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="newPassword">New Password</label>
+                            <input type="password" id="newPassword" name="newPassword"
+                                minlength="8" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm New Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword"
+                                minlength="8" required>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Update Password</button>
+                    </div>
+                </form>
+
+                <hr class="divider">
+
+                <div class="security-block">
+                    <div>
+                        <h3>Two-Factor Authentication</h3>
+                        <p>Add an extra layer of security to your account.</p>
+                    </div>
+                    <button type="button" class="btn-secondary">Enable 2FA</button>
+                </div>
+
+                <hr class="divider">
+
+                <div class="security-block danger">
+                    <div>
+                        <h3>Delete Account</h3>
+                        <p>Permanently remove your account and all associated data.</p>
+                    </div>
+                    <button type="button" class="btn-danger">Delete Account</button>
+                </div>
+            </section>
+
+
+            <!-- Activity -->
+            <section class="profile-section">
+                <h2 class="section-title">Activity</h2>
+
+                <div class="activity-list">
+
+                    <div class="activity-item">
+                        <div class="activity-dot"></div>
+                        <div>
+                            <h4>Submitted a Financial Fraud Report</h4>
+                            <p>12 November 2026 · 10:42 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-dot"></div>
+                        <div>
+                            <h4>Petition approved: Public Accountability</h4>
+                            <p>05 November 2026 · 02:15 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-dot"></div>
+                        <div>
+                            <h4>Updated profile information</h4>
+                            <p>01 November 2026 · 09:05 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-dot"></div>
+                        <div>
+                            <h4>Account created</h4>
+                            <p>20 October 2026 · 11:30 AM</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- ============================================================
+         AUTH — guard, user info, logout (only JS on this page)
+         ============================================================ -->
+    <script src="/js/auth.js"></script>
+    <script>
+        // 1) Guard — must run first
+        if (!requireAuth('/html/login.html')) {
+            throw new Error('Not authenticated');
+        }
+
+        // 2) Fill user info
+        const session = getSession();
+        if (session) {
+            const name  = session.name || 'User Account';
+            const email = session.email || 'user@example.com';
+
+            const initials = name
+                .split(' ')
+                .map(p => p[0])
+                .join('')
+                .toUpperCase()
+                .slice(0, 2);
+
+            document.getElementById('profileIcon').textContent   = initials;
+            document.getElementById('profileName').textContent   = name;
+            document.getElementById('profileAvatar').textContent = initials;
+            document.getElementById('displayName').textContent   = name;
+            document.getElementById('displayEmail').textContent  = email;
+            document.getElementById('fullName').value            = name;
+            document.getElementById('email').value               = email;
+        }
+
+        // 3) Logout
+        document.getElementById('logoutBtn')
+            .addEventListener('click', event => {
+                event.preventDefault();
+                logout('/html/login.html');
+            });
+    </script>
+</body>
+</html>

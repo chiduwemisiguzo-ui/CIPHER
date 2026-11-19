@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Auctions - NBFI</title>
+    <link rel="stylesheet" href="./css/user-dashboard.css">
+    <link rel="stylesheet" href="./css/land-auction.css">
+    <!-- Font Awesome 6.5.1 Stable -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>NBFI</h2>
+            <p class="menu-title">USER MENU</p>
+
+            <nav>
+                <a href="user-dashboard.html" ><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="my-reports.html"><i class="fas fa-newspaper"></i> My Reports</a>
+                <a href="my-petitions.html"><i class="fas fa-file-alt"></i> My Petitions</a>
+                <a href="land-auctions.html" class="active"> <i class="fas fa-landmark"></i> Land Auctions</a>
+                <a href="my-profile.html"><i class="fa-solid fa-user"></i> My profile</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="../html/index.html" class="view-website">View Website</a>
+            </nav>
+
+            <a href="#" class="logout" id="logoutBtn"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+        </aside>
+
+
+    <div class="main-content">
+
+        <div class="page-heading">
+            <div>
+                <h1>Land Auctions</h1>
+                <p>Explore available properties and participate in auctions.</p>
+            </div>
+            <!-- CHANGED: id so JS can fill the name -->
+            <span class="user-tag" id="profileName">User Account</span>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>12</h3>
+                <p>Available Lands</p>
+            </div>
+            <div class="stat-card">
+                <h3>04</h3>
+                <p>Ongoing Auctions</p>
+            </div>
+            <div class="stat-card">
+                <h3>02</h3>
+                <p>My Active Bids</p>
+            </div>
+        </div>
+
+        <h2>Available Properties</h2>
+
+        <div class="land-grid">
+
+            <div class="land-card">
+                <img src="../image/land5.jpg" alt="Available land">
+                <div class="land-info">
+                    <span class="status">Available</span>
+                    <h3>Residential Land</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Lekki, Lagos State</p>
+                    <p>Plot Size: 500 sqm</p>
+                    <div class="price">
+                        <small>Starting Price</small>
+                        <h2>₦5,000,000</h2>
+                    </div>
+                    <a href="land-details.html" class="details">View Details</a>
+                    <a href="bid.html" class="bid">Place Bid</a>
+                </div>
+            </div>
+
+            <div class="land-card">
+                <img src="../image/land8.jpg" alt="Available land">
+                <div class="land-info">
+                    <span class="status">Available</span>
+                    <h3>Commercial Land</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Port Harcourt, Rivers</p>
+                    <p>Plot Size: 800 sqm</p>
+                    <div class="price">
+                        <small>Starting Price</small>
+                        <h2>₦8,500,000</h2>
+                    </div>
+                    <a href="land-details.html" class="details">View Details</a>
+                    <a href="bid.html" class="bid">Place Bid</a>
+                </div>
+            </div>
+
+            <div class="land-card">
+                <img src="../image/land9.jpg" alt="Available land">
+                <div class="land-info">
+                    <span class="status">Available</span>
+                    <h3>Residential Land</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Abuja, FCT</p>
+                    <p>Plot Size: 600 sqm</p>
+                    <div class="price">
+                        <small>Starting Price</small>
+                        <h2>₦6,000,000</h2>
+                    </div>
+                    <a href="land-details.html" class="details">View Details</a>
+                    <a href="bid.html" class="bid">Place Bid</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="land-grid">
+
+            <div class="land-card">
+                <img src="../image/land6.jpg" alt="Available land">
+                <div class="land-info">
+                    <span class="status">Available</span>
+                    <h3>Residential Land</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Lekki, Lagos State</p>
+                    <p>Plot Size: 500 sqm</p>
+                    <div class="price">
+                        <small>Starting Price</small>
+                        <h2>₦5,000,000</h2>
+                    </div>
+                    <a href="land-details.html" class="details">View Details</a>
+                    <a href="bid.html" class="bid">Place Bid</a>
+                </div>
+            </div>
+
+            <div class="land-card">
+                <img src="../image/land2.jpg" alt="Available land">
+                <div class="land-info">
+                    <span class="status">Available</span>
+                    <h3>Commercial Land</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Port Harcourt, Rivers</p>
+                    <p>Plot Size: 800 sqm</p>
+                    <div class="price">
+                        <small>Starting Price</small>
+                        <h2>₦8,500,000</h2>
+                    </div>
+                    <a href="land-details.html" class="details">View Details</a>
+                    <a href="bid.html" class="bid">Place Bid</a>
+                </div>
+            </div>
+
+            <div class="land-card">
+                <img src="../image/land3.jpg" alt="Available land">
+                <div class="land-info">
+                    <span class="status">Available</span>
+                    <h3>Residential Land</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Abuja, FCT</p>
+                    <p>Plot Size: 600 sqm</p>
+                    <div class="price">
+                        <small>Starting Price</small>
+                        <h2>₦6,000,000</h2>
+                    </div>
+                    <a href="land-details.html" class="details">View Details</a>
+                    <a href="bid.html" class="bid">Place Bid</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ============================================================
+     AUTH — guard, user info, logout
+     ============================================================ -->
+<script src="/js/auth.js"></script>
+<script>
+    // 1) Guard — must run first
+    if (!requireAuth('/html/login.html')) {
+        throw new Error('Not authenticated');
+    }
+
+    // 2) Fill in user name in the page heading
+    const session = getSession();
+    if (session) {
+        document.getElementById('profileName').textContent = session.name;
+    }
+
+    // 3) Logout
+    document.getElementById('logoutBtn')
+        .addEventListener('click', event => {
+            event.preventDefault();
+            logout('/html/login.html');
+        });
+</script>
+</body>
+</html>

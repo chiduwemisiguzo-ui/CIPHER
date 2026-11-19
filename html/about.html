@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | NFBI</title>
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <!-- Font Awesome 6.5.1 Stable -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .to-top {
+        position: fixed;
+        background:linear-gradient(120deg,rgba(0, 0, 0, 0.329), crimson) ;
+        bottom: 20px;
+        right: 20px;
+        color: snow;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .to-top.active {
+        opacity: 1;
+    }
+</style>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2> <i class="fa-solid fa-gem"></i> NBFI <br>
+                    <span>National Bureau Of Financial Investigations</span>
+                </h2>
+            </div>
+
+            <input type="checkbox" id="menu">
+
+            <label for="menu" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="news.html">News & Media</a></li>
+                <li><a href="wanted.html">Wanted Persons</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Help & Contact</a></li>
+            </ul>
+
+            <!-- CHANGED: filled by auth.js -->
+            <div class="nav-buttons"><!-- filled by auth.js --></div>
+
+        </nav>
+    </header>
+
+
+    <!-- ABOUT HERO SECTION -->
+    <section class="about-hero bg-img">
+        <div class="about-content">
+            <h1>Working Towards An <br> <span>Economicaly Safer Society</span></h1>
+
+            <p>
+                The NBFI is a financial and economic safety platform dedicated to
+                promoting awareness, supporting responsible reporting
+                and connecting people with useful safety resources.
+            </p>
+
+            <button><a href="#">Discover More</a></button>
+        </div>
+    </section>
+
+
+    <!-- WHO WE ARE -->
+    <section class="who-we-are" id="who-we-are">
+        <div class="who-image">
+            <img src="/image/safe.jpg" alt="Public safety professionals">
+        </div>
+
+        <div class="who-content">
+            <h4>ABOUT THE NBFI</h4>
+            <h2>Who We Are</h2>
+
+            <p>
+                The NBFI is a platform designed to make economic information more accessible. We provide a
+                space where people can learn about fraudulent issues,
+                access helpful resources and submit concerns through
+                responsible reporting channels.
+            </p>
+
+            <p>
+                Our goal is to encourage awareness, transparency,
+                accountability and cooperation in building safer
+                communities.
+            </p>
+        </div>
+    </section>
+
+    <section class="leaders">
+        <div class="member-text">
+            <h2>SIGNIFICANT BOARD MEMBERS</h2>
+            <p>
+                Our team of experienced and dedicated leaders
+                are here to lead, direct our economic and financial safety.
+            </p>
+        </div>
+
+        <div class="member-container">
+
+            <div class="member-card">
+                <img src="/image/dani.jpeg" alt="PHARM. Mrs Onyekwere Ogechi">
+                <h3>PHARM. Mrs Onyekwere Ogechi</h3>
+                <p>Deputy Director-General (DDG)</p>
+            </div>
+
+            <div class="member-card">
+                <img src="/image/man1.jpeg" alt="General Ejike Ethelbert">
+                <h3>General Ejike Ethelbert</h3>
+                <p>Director General (DG)</p>
+            </div>
+
+            <div class="member-card">
+                <img src="/image/man3.jpeg" alt="MR. Tunde Bello">
+                <h3>MR. Tunde Bello</h3>
+                <p>Executive Secretary</p>
+            </div>
+
+            <div class="member-card">
+                <img src="/image/man2.jpeg" alt="MR. Goodwin Ademoye">
+                <h3>MR. Goodwin Ademoye</h3>
+                <p>Chief Investigation Officer</p>
+            </div>
+
+            <div class="member-card">
+                <img src="/image/yoonchae.jpeg" alt="MRS Queen Nwigwe">
+                <h3>MRS Queen Nwigwe</h3>
+                <p>Chief Intelligence Officer</p>
+            </div>
+
+            <div class="member-card">
+                <img src="/image/woman1.jpeg" alt="MS Stella Orji">
+                <h3>MS Stella Orji</h3>
+                <p>Chief Legal Adviser</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- MISSION AND VISION -->
+    <section class="mission-vision">
+        <div class="section-heading">
+            <h2>Our Purpose</h2>
+            <p>The values that guide everything we do.</p>
+        </div>
+
+        <div class="purpose-container">
+            <div class="purpose-card">
+                <div class="card-icon">01</div>
+                <h3>Our Mission</h3>
+                <p>
+                    To promote public safety by providing accessible
+                    information, encouraging responsible reporting
+                    and supporting community awareness.
+                </p>
+            </div>
+
+            <div class="purpose-card">
+                <div class="card-icon">02</div>
+                <h3>Our Vision</h3>
+                <p>
+                    To contribute to a society where people are
+                    informed, communities are safer and responsible
+                    action is encouraged.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CORE VALUES -->
+    <section class="values">
+        <div class="section-heading">
+            <h2>Our Core Values</h2>
+            <p>Principles that define our platform.</p>
+        </div>
+
+        <div class="values-container">
+            <div class="value-card">
+                <h3>Justice</h3>
+                <p>Encouraging fairness and respect for the law.</p>
+            </div>
+            <div class="value-card">
+                <h3>Integrity</h3>
+                <p>Promoting honesty and responsible information sharing.</p>
+            </div>
+            <div class="value-card">
+                <h3>Confidentiality</h3>
+                <p>Respecting privacy and protecting sensitive information.</p>
+            </div>
+            <div class="value-card">
+                <h3>Accountability</h3>
+                <p>Encouraging responsibility and <br>transparency.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WHAT WE DO -->
+    <section class="what-we-do">
+        <div class="section-heading">
+            <h2>What We Do</h2>
+            <p>Explore the services available on CipherWatch.</p>
+        </div>
+
+        <div class="work-container">
+            <div class="work-card">
+                <h3>Crime Reporting</h3>
+                <p>
+                    A channel for submitting reports and concerns
+                    for review by the appropriate authorities.
+                </p>
+            </div>
+            <div class="work-card">
+                <h3>Wanted Persons</h3>
+                <p>
+                    Access verified public notices authorised
+                    for publication by relevant authorities.
+                </p>
+            </div>
+            <div class="work-card">
+                <h3>Public Awareness</h3>
+                <p>
+                    Read useful updates, safety information
+                    and important announcements.
+                </p>
+            </div>
+            <div class="work-card">
+                <h3>Property Auctions</h3>
+                <p>
+                    Find information about legally authorised
+                    property auction notices.
+                </p>
+            </div>
+            <div class="work-card">
+                <h3>Petition Submission</h3>
+                <p>
+                    Submit petitions and concerns through
+                    the platform's designated channels.
+                </p>
+            </div>
+            <div class="work-card">
+                <h3>Safety Resources</h3>
+                <p>
+                    Explore helpful information and resources
+                    that encourage safer communities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- ABOUT -->
+            <div class="footer-about">
+                <h2>NBFI</h2>
+                <p>
+                    Promoting financial safety, accountability
+                    and access to justice through reporting,
+                    investigations and public awareness.
+                </p>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News & Media</a></li>
+                    <li><a href="wanted.html">Wanted Persons</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Help & Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- OUR SERVICES -->
+            <div class="footer-links">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="contact.html">Report an Incident</a></li>
+                    <li><a href="login.html">Investigations</a></li>
+                    <li><a href="login.html">Property Auctions</a></li>
+                    <li><a href="petition.html">Submit a Petition</a></li>
+                    <li><a href="login.html">Track a Report</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@nbfi.com</p>
+                <p>Phone: +234 800 000 0000</p>
+                <p>Address: Nigeria</p>
+                <button class="contact-btn"><a href="contact.html">Get In Touch</a></button>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="footer-bottom">
+            <p>@ 2026 NBFI. All Rights Reserved.</p>
+            <div>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+        </div>
+
+    </footer>
+     <span id="totop" class="to-top"><i class="fa-solid fa-arrow-up-long"></i></span>
+
+    <script src="../js/index2.js"></script>
+
+
+    <!-- Auth — populates the navbar login/dashboard button -->
+    <script src="/js/auth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | NFBI</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <!-- Font Awesome 6.5.1 Stable -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* ---------- Preloader ---------- */
+        #preloader {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            max-width: 100%;
+            background: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            z-index: 99999;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+
+        #preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        /* Lock scroll while preloader is visible */
+        body:has(#preloader:not(.hidden)) {
+            overflow: hidden;
+        }
+
+        /* ---------- Sequential letters ---------- */
+        .preloader-letters {
+            display: flex;
+            gap: 12px;
+        }
+
+        .preloader-letters span {
+            color: #ffffff;
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: letterIn 0.5s ease forwards;
+        }
+
+        /* Staggered delays — each letter appears 0.35s after the previous */
+        .preloader-letters span:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .preloader-letters span:nth-child(2) {
+            animation-delay: 0.45s;
+        }
+
+        .preloader-letters span:nth-child(3) {
+            animation-delay: 0.8s;
+        }
+
+        .preloader-letters span:nth-child(4) {
+            animation-delay: 1.15s;
+        }
+
+        @keyframes letterIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ---------- Pulsing "Loading" text ---------- */
+        .preloader-text {
+            color: #ffffff;
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.7;
+            animation: pulse 1.4s ease-in-out infinite;
+            animation-delay: 1.6s;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.4;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        /* ---------- Thin progress bar ---------- */
+        .preloader-bar {
+            width: 180px;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .preloader-bar::after {
+            content: "";
+            display: block;
+            width: 40%;
+            height: 100%;
+            background: #dc2626;
+            border-radius: 999px;
+            animation: slide 1.2s ease-in-out infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(350%);
+            }
+        }
+
+        /* ---------- Back to top ---------- */
+        .to-top {
+            position: fixed;
+            background: linear-gradient(120deg, rgba(0, 0, 0, 0.329), crimson);
+            bottom: 20px;
+            right: 20px;
+            color: snow;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 100;
+            transition: opacity 0.3s ease;
+        }
+
+        .to-top.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* ---------- Back to top ---------- */
+        .to-top {
+            position: fixed;
+            background: linear-gradient(120deg, rgba(0, 0, 0, 0.329), crimson);
+            bottom: 20px;
+            right: 20px;
+            color: snow;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 100;
+            transition: opacity 0.3s ease;
+        }
+
+        .to-top.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-letters">
+            <span>N</span>
+            <span>B</span>
+            <span>F</span>
+            <span>I</span>
+        </div>
+        <div class="preloader-bar"></div>
+        <p class="preloader-text">Loading</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2> <i class="fa-solid fa-gem"></i> NBFI <br>
+                    <span>National Bureau Of Financial Investigations</span>
+                </h2>
+            </div>
+
+            <input type="checkbox" id="menu">
+
+            <label for="menu" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News & Media</a></li>
+                <li><a href="wanted.html">Wanted Persons</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Help & Contact</a></li>
+            </ul>
+
+            <!-- Filled by auth.js -->
+            <div class="nav-buttons"><!-- filled by auth.js --></div>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="small-title">NATIONAL BUREAU OF FINANCIAL INVESTIGATION</p>
+
+            <h1>FIGHTING FINANCIAL CRIME.<br>
+                <span>PROTECTING OUR FUTURE.</span>
+            </h1>
+
+            <p class="hero-text">
+                Committed to investigating financial crimes,
+                promoting economic integrity and protecting
+                the nation's financial interests.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="about.html" class="btn-primary">Explore Our Mission</a>
+                <a href="petition.html" class="btn-outline">Report an Incident</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <div class="about-image">
+            <img src="../image/money.jpg" alt="Financial investigation">
+        </div>
+
+        <div class="about-content">
+            <p class="section-label">WHO WE ARE</p>
+            <h2>Committed to Justice and Financial Integrity</h2>
+            <p>
+                The National Bureau of Financial Investigation
+                (NBFI) is dedicated to preventing and investigating
+                financial and economic crimes.
+            </p>
+            <p>
+                Through intelligence, investigation and public
+                cooperation, we work towards a transparent,
+                accountable and secure financial environment.
+            </p>
+            <a href="about.html" class="read-btn">Discover More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+
+    <!-- STATISTICS SECTION -->
+    <section class="statistics">
+        <div class="section-heading">
+            <p class="section-label">OUR IMPACT</p>
+            <h2>Making a Difference</h2>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <h2>250+</h2>
+                <p>Cases Investigated</p>
+            </div>
+            <div class="stat-card">
+                <h2>180+</h2>
+                <p>Petitions Received</p>
+            </div>
+            <div class="stat-card">
+                <h2>95+</h2>
+                <p>Cases Resolved</p>
+            </div>
+            <div class="stat-card">
+                <h2>120+</h2>
+                <p>Public Reports</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- OPERATIONS SECTION -->
+    <section class="operations">
+        <div class="section-heading2">
+            <p class="section-label">WHAT WE DO</p>
+            <h2>Our Key Operations</h2>
+            <p>Working together to combat financial and economic crimes.</p>
+        </div>
+
+        <div class="operation-container">
+            <div class="operation-card">
+                <div class="operation-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                <h3>Financial Investigation</h3>
+                <p>Investigating suspicious financial activities and fraudulent transactions.</p>
+            </div>
+            <div class="operation-card">
+                <div class="operation-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <h3>Economic Crime Prevention</h3>
+                <p>Promoting awareness and preventing economic crimes through effective investigations.</p>
+            </div>
+            <div class="operation-card">
+                <div class="operation-icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                <h3>Asset Recovery</h3>
+                <p>Supporting lawful processes for the recovery of assets linked to financial crimes.</p>
+            </div>
+            <div class="operation-card">
+                <div class="operation-icon"><i class="fa-solid fa-envelope"></i></div>
+                <h3>Public Petitions</h3>
+                <p>Providing citizens with a platform to submit complaints and petitions.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WANTED PERSONS SECTION -->
+    <section class="wanted">
+        <div class="wanted-content">
+            <p class="section-label">PUBLIC NOTICES</p>
+            <h2>Individuals Under Investigation</h2>
+            <p>View official public notices and information about individuals sought by the agency.</p>
+            <a href="wanted.html" class="btn-primary">
+                View Public Notices <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="wanted-image">
+            <img src="../image/investigationreport.jpg" alt="Investigation notice">
+        </div>
+    </section>
+
+
+    <!-- NEWS SECTION -->
+    <section class="news">
+        <div class="section-heading3">
+            <p class="section-label">STAY INFORMED</p>
+            <h2>Latest News & Updates</h2>
+        </div>
+
+        <div class="news-container">
+            <div class="news-card">
+                <img src="../image/agencynews.jpg" alt="Agency news">
+                <div class="news-content">
+                    <span>OFFICIAL STATEMENT</span>
+                    <h3>NBFI Reaffirms Commitment to Financial Accountability</h3>
+                    <a href="read.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="../image/investigation update.jpg" alt="Investigation news">
+                <div class="news-content">
+                    <span>INVESTIGATION UPDATE</span>
+                    <h3>Agency Announces New Financial Investigation Initiative</h3>
+                    <a href="read.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="../image/awareness.jpg" alt="Public awareness">
+                <div class="news-content">
+                    <span>PUBLIC AWARENESS</span>
+                    <h3>Citizens Encouraged to Report Financial Fraud</h3>
+                    <a href="read.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <h2>Be Part of the Fight Against Financial Crime</h2>
+        <p>Your information can help promote accountability and protect our financial system.</p>
+        <a href="petition.html" class="btn-white">
+            Submit a Petition <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>NBFI</h2>
+                <p>Promoting financial safety, accountability and access to justice through reporting, investigations
+                    and public awareness.</p>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News & Media</a></li>
+                    <li><a href="wanted.html">Wanted Persons</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Help & Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="contact.html">Report an Incident</a></li>
+                    <li><a href="login.html">Investigations</a></li>
+                    <li><a href="login.html">Property Auctions</a></li>
+                    <li><a href="petition.html">Submit a Petition</a></li>
+                    <li><a href="login.html">Track a Report</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@nbfi.com</p>
+                <p>Phone: +234 800 000 0000</p>
+                <p>Address: Nigeria</p>
+                <button class="contact-btn"><a href="contact.html">Get In Touch</a></button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>@ 2026 NBFI. All Rights Reserved.</p>
+            <div>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <span id="totop" class="to-top"><i class="fa-solid fa-arrow-up-long"></i></span>
+
+    <!-- Scripts — all inside body, before closing tag -->
+    <script src="../js/index2.js"></script>
+    <script src="/js/auth.js"></script>
+
+    <script>
+    // Hide preloader once the page has loaded AND letters have finished animating
+    window.addEventListener('load', () => {
+        const preloader = document.getElementById('preloader');
+            if (preloader) {
+                // Letters finish at ~1.65s; hold an extra 300ms, then fade out
+                setTimeout(() => preloader.classList.add('hidden'), 2000);
+        }
+    });
+    </script>
+</body>
+
+</html>

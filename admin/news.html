@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="./css/auctions.css">
+    <!-- Font Awesome 6.5.1 Stable -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Sidebar -->
+    <nav class="sidebar">
+        <h2>NBFI<span>.</span></h2>
+        <p class="admin-label">ADMIN PANEL</p>
+
+        <ul>
+            <li >
+                <a href="admin.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+            </li>
+            <li>
+                <a href="wanted.html"><i class="fas fa-user-secret"></i> Wanted Persons</a>
+            </li>
+            <li>
+                <a href="petitions.html"><i class="fas fa-file-alt"></i> Petitions</a>
+            </li>
+            <li>
+                <a href="auctions.html"><i class="fas fa-landmark"></i> Land Auctions</a>
+            </li>
+            <li class="active">
+                <a href="news.html"><i class="fas fa-newspaper"></i> News & Media</a>
+            </li>
+            <li>
+                <a href="users.html"><i class="fas fa-users"></i> Users</a>
+            </li>
+            <li>
+                <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+            </li>
+        </ul>
+
+        <a href="admin-login.html" class="logout">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+    </nav>
+
+    
+
+    <div class="main-content">
+
+        <h2>News & Media Management</h2>
+        <p class="subtitle">Create, manage and publish official news and announcements.</p>
+
+        <!-- Statistics -->
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h3>35</h3>
+                <p>Total News</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>28</h3>
+                <p>Published</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>07</h3>
+                <p>Drafts</p>
+            </div>
+
+        </div>
+
+
+        <!-- Create News Section -->
+
+        <div class="news-form">
+
+            <h3>Create New Article</h3>
+            <p>Add a new news update or official agency announcement.</p>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>News Title</label>
+                        <input type="text" placeholder="Enter news headline" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>News Category</label>
+
+                        <select required>
+                            <option value="">Select category</option>
+                            <option>Official Announcement</option>
+                            <option>Agency News</option>
+                            <option>Public Notice</option>
+                            <option>Press Release</option>
+                            <option>Land Auction Updates</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Publication Date</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Upload News Image</label>
+                        <input type="file" accept="image/*">
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+                    <label>News Description</label>
+                    <textarea rows="7" placeholder="Write your news article here..." required></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="publish-btn">
+                        Publish News
+                    </button>
+
+                    <button type="reset" class="draft-btn">
+                        Clear Form
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- Manage News Section -->
+
+        <div class="manage-news">
+
+            <h3>Manage News Articles</h3>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>News Title</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>NBFI Releases Official Statement</td>
+                        <td>Announcement</td>
+                        <td>16 Nov 2026</td>
+                        <td><span class="published">Published</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>New Property Auction Schedule</td>
+                        <td>Land Auction</td>
+                        <td>12 Nov 2026</td>
+                        <td><span class="published">Published</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Public Awareness Campaign</td>
+                        <td>Public Notice</td>
+                        <td>10 Nov 2026</td>
+                        <td><span class="draft">Draft</span></td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

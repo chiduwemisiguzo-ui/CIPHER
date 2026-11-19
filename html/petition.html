@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petition | NBFI</title>
+    <link rel="stylesheet" href="../css/petition.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <!-- Font Awesome 6.5.1 Stable -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .to-top {
+        position: fixed;
+        background:linear-gradient(120deg,rgba(0, 0, 0, 0.329), crimson) ;
+        bottom: 20px;
+        right: 20px;
+        color: snow;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .to-top.active {
+        opacity: 1;
+    }
+</style>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2> <i class="fa-solid fa-gem"></i> NBFI <br>
+                    <span>National Bureau Of Financial Investigations</span>
+                </h2>
+            </div>
+
+            <input type="checkbox" id="menu">
+
+            <label for="menu" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News & Media</a></li>
+                <li><a href="wanted.html">Wanted Persons</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Help & Contact</a></li>
+            </ul>
+
+            <!-- CHANGED: filled by auth.js -->
+            <div class="nav-buttons"><!-- filled by auth.js --></div>
+
+        </nav>
+    </header>
+
+
+    <section class="petition-hero">
+        <h1>Submit A Petition</h1>
+        <p>
+            Your voice matters. Submit a petition to bring
+            important issues to the attention of the NBFI.
+        </p>
+    </section>
+
+
+    <div class="petition-heading">
+        <h2>Petition Submission Form</h2>
+        <p>Please provide accurate information in the fields below.</p>
+    </div>
+
+    <section class="petition-container">
+        <form>
+            <h3>01. Personal Information</h3>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="Enter phone number">
+                </div>
+
+                <div class="form-group">
+                    <label>State</label>
+                    <input type="text" placeholder="Enter your state">
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="petition-container">
+        <form action="">
+            <h3>02. Petition Details</h3>
+
+            <div class="form-group">
+                <label>Petition Title</label>
+                <input type="text" placeholder="Enter petition title">
+            </div>
+
+            <div class="form-group">
+                <label>Petition Category</label>
+                <select>
+                    <option>Select a category</option>
+                    <option>Financial Fraud</option>
+                    <option>Economic Crimes</option>
+                    <option>Corruption</option>
+                    <option>Money Laundering</option>
+                    <option>Property Fraud</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Location of Incident</label>
+                <input type="text" placeholder="Enter incident location">
+            </div>
+
+            <div class="form-group">
+                <label>Petition Description</label>
+                <textarea rows="7" placeholder="Explain the issue you want CipherWatch to investigate..."></textarea>
+            </div>
+        </form>
+    </section>
+
+
+    <section class="petition-container">
+        <form action="">
+            <h3>03. Supporting Documents</h3>
+
+            <div class="form-group">
+                <label>Upload Evidence (Optional)</label>
+                <input type="file" multiple>
+                <small>Upload relevant documents or images.</small>
+            </div>
+
+            <div class="anonymous">
+                <input type="checkbox" id="anonymous">
+                <label for="anonymous">
+                    I wish to submit this petition anonymously.
+                </label>
+            </div>
+
+            <div class="agreement">
+                <input type="checkbox" required>
+                <label>
+                    I confirm that the information provided is accurate
+                    to the best of my knowledge.
+                </label>
+            </div>
+
+            <button type="submit">SUBMIT PETITION</button>
+
+            <p class="privacy">
+                Your information should be handled confidentially
+                and in accordance with applicable privacy laws.
+            </p>
+        </form>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- ABOUT -->
+            <div class="footer-about">
+                <h2>NBFI</h2>
+                <p>
+                    Promoting financial safety, accountability
+                    and access to justice through reporting,
+                    investigations and public awareness.
+                </p>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News & Media</a></li>
+                    <li><a href="wanted.html">Wanted Persons</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Help & Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- OUR SERVICES -->
+            <div class="footer-links">
+                <h3>Our Services</h3>
+                 <ul>
+                    <li><a href="contact.html">Report an Incident</a></li>
+                    <li><a href="login.html">Investigations</a></li>
+                    <li><a href="login.html">Property Auctions</a></li>
+                    <li><a href="petition.html">Submit a Petition</a></li>
+                    <li><a href="login.html">Track a Report</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@nbfi.com</p>
+                <p>Phone: +234 800 000 0000</p>
+                <p>Address: Nigeria</p>
+                <button class="contact-btn"><a href="contact.html">Get In Touch</a></button>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="footer-bottom">
+            <p>@ 2026 NBFI. All Rights Reserved.</p>
+            <div>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+        </div>
+
+    </footer>
+ <span id="totop" class="to-top"><i class="fa-solid fa-arrow-up-long"></i></span>
+
+    <script src="../js/index2.js"></script>
+
+    <!-- Auth — populates navbar login/dashboard button -->
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>

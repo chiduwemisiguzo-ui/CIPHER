@@ -1,0 +1,292 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN |NBFI</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <!-- Font Awesome 6.5.1 Stable -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .to-top {
+        position: fixed;
+        background:linear-gradient(120deg,rgba(0, 0, 0, 0.329), crimson) ;
+        bottom: 20px;
+        right: 20px;
+        color: snow;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .to-top.active {
+        opacity: 1;
+    }
+</style>
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <!-- <span class="logo-icon"> <i class="fa-solid fa-gem"></i></span> -->
+                <h2> <i class="fa-solid fa-gem"></i> NBFI <br> <span>National Bureau Of Financial Investigations</span>
+                </h2>
+
+            </div>
+
+
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News & Media</a></li>
+                <li><a href="wanted.html">Wanted Persons</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Help & Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <button class="petition-btn"><a href="petition.html">
+                        Submit Petition
+                    </a> </button>
+
+                <button class="login-btn"> <a href="login.html">
+                        Login
+                    </a></button>
+            </div>
+
+        </nav>
+    </header>
+
+    
+
+
+    <main class="login-container">
+
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <h1>Create an Account with <span>NBFI</span></h1>
+
+                <p>
+                    Join the NBFI in promoting transparency,
+                    protecting public resources and
+                    fighting financial crimes.
+                </p>
+
+                <div class="features">
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h4>Secure Access</h4>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                        <h4>Your Data Is Protected</h4>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-handshake"></i>
+                        <h4>Together for a Safer Society</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+
+            <div class="login-box">
+
+                <div class="login-logo">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <h2> NBFI</h2>
+                </div>
+
+                <h3>Register to access NBFI services.</h3>
+
+                <!-- <form>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password" required>
+
+                        <i class="fa-solid fa-eye toggle" onclick="togglePassword()"></i>
+                    </div>
+
+                    <div class="options">
+                        <label>
+                            <input type="checkbox">
+                            Remember Me
+                        </label>
+
+                        <a href="forgot-password.html">
+                            Forgot Password?
+                        </a>
+                    </div>
+
+                    <button type="submit">
+                        <a href="admin.html"> <i class="fa-solid fa-right-to-bracket"></i>
+                            Log In</a>
+                    </button>
+
+                </form> -->
+
+                <form class="signupForm">
+
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="Enter your phone number" required>
+
+                    <label>Password</label>
+                    <input type="password" placeholder="Create a password" required>
+
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Confirm your password" required>
+
+                    <div class="terms">
+                        <input type="checkbox" required>
+                        <span>I agree to the Terms and Conditions.</span>
+                    </div>
+
+                    <button type="submit">Create Account</button>
+
+                </form>
+
+                <div class="or">
+                    <hr>
+                    <span>OR</span>
+                    <hr>
+                </div>
+
+                <button class="google-btn" type="button">
+                    <i class="fa-brands fa-google"></i>
+                    Continue with Google
+                </button>
+
+               
+
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- ABOUT -->
+            <div class="footer-about">
+                <h2>NBFI</h2>
+
+                <p>
+                    Promoting financial safety, accountability
+                    and access to justice through reporting,
+                    investigations and public awareness.
+                </p>
+
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News & Media</a></li>
+                    <li><a href="wanted.html">Wanted Persons</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Help & Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!-- OUR SERVICES -->
+            <div class="footer-links">
+                <h3>Our Services</h3>
+
+                <ul>
+                    <li><a href="contact.html">Report an Incident</a></li>
+                    <li><a href="login.html">Investigations</a></li>
+                    <li><a href="login.html">Property Auctions</a></li>
+                    <li><a href="petition.html">Submit a Petition</a></li>
+                    <li><a href="login.html">Track a Report</a></li>
+                </ul>
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+
+                <p>Email: info@nbfi.com</p>
+                <p>Phone: +234 800 000 0000</p>
+                <p>Address: Nigeria</p>
+
+                <button class="contact-btn"><a href="contact.html">
+                        Get In Touch
+                    </a> </button>
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM FOOTER -->
+        <div class="footer-bottom">
+
+            <p>
+                @ 2026 NBFI. All Rights Reserved.
+            </p>
+
+            <div>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </footer>
+ <span id="totop" class="to-top"><i class="fa-solid fa-arrow-up-long"></i></span>
+
+    <script src="../js/index2.js"></script>
+
+    
+</body>
+
+</html>

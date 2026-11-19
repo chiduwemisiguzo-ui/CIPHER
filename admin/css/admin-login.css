@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eeeeee;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    min-height: 680px;
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+}
+
+/* LEFT SECTION */
+
+.left-section {
+    width: 55%;
+    background-image:
+    url("/image/admin building.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        130deg,
+        rgba(0,0,0,0.9),
+        rgba(80, 0, 15, 0.6)
+    );
+}
+
+.left-content {
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    width: 100%;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 170px;
+}
+
+.logo h1 {
+    font-size: 45px;
+    border-right: 3px solid crimson;
+    padding-right: 15px;
+}
+
+.logo span {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* MAIN TEXT */
+
+.main-text h2 {
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+.main-text h2 span {
+    color: crimson;
+}
+
+.line {
+    width: 65px;
+    height: 4px;
+    background: crimson;
+    margin: 20px 0;
+}
+
+.main-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 400px;
+    color: #eeeeee;
+}
+
+/* FEATURES */
+
+.features {
+    display: flex;
+    gap: 25px;
+    margin-top: 65px;
+}
+
+.features div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-right: 1px solid #aaa;
+    padding-right: 20px;
+}
+
+.features div:last-child {
+    border: none;
+}
+
+.features i {
+    color: white;
+    font-size: 22px;
+    border: 2px solid crimson;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.features p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* RIGHT SECTION */
+
+.right-section {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    background: #fafafa;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* SHIELD ICON */
+
+.shield {
+    background: crimson;
+    color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 15px 15px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    font-size: 30px;
+}
+
+.login-box h1 {
+    font-size: 45px;
+    color: crimson;
+}
+
+.login-box h2 {
+    font-size: 27px;
+    margin: 5px 0 15px;
+    color: #171717;
+}
+
+.welcome {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* INPUT FIELDS */
+
+.input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    background: white;
+    transition: 0.3s;
+}
+
+.input-box:focus-within {
+    border-color: crimson;
+    box-shadow: 0 0 5px rgba(220,20,60,0.2);
+}
+
+.input-box i {
+    color: #333;
+    font-size: 17px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 17px 12px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+/* OPTIONS */
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin: 10px 0 25px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #444;
+}
+
+.options a {
+    color: crimson;
+    text-decoration: none;
+}
+
+/* LOGIN BUTTON */
+
+button {
+    width: 100%;
+    padding: 17px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button a{
+color: snow;
+text-decoration: none;
+}
+
+button i {
+    margin-right: 10px;
+}
+
+button:hover {
+    background: #a00020;
+    transform: translateY(-2px);
+}
+
+/* SECURITY */
+
+.secure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #777;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.secure i {
+    color: #555;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 850px) {
+
+    .container {
+        flex-direction: column;
+        width: 95%;
+        margin: 20px 0;
+    }
+
+    .left-section {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .right-section {
+        width: 100%;
+        padding: 40px 25px;
+    }
+
+    .logo {
+        margin-bottom: 80px;
+    }
+
+    .features {
+        margin-top: 35px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .left-content {
+        padding: 25px;
+    }
+
+    .main-text h2 {
+        font-size: 25px;
+    }
+
+    .logo h1 {
+        font-size: 35px;
+    }
+
+    .features {
+        gap: 12px;
+    }
+
+    .features div {
+        padding-right: 8px;
+    }
+
+    .features i {
+        font-size: 16px;
+        padding: 9px;
+    }
+
+}

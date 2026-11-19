@@ -1,0 +1,131 @@
+
+.signup-container {
+    display: flex;
+    width: 900px;
+   max-width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.701);
+    padding: 80px;
+}
+
+.signup-image {
+    width: 42%;
+    background: linear-gradient(
+        rgba(41, 39, 39, 0.557),
+        rgba(0, 0, 0, 0.865)
+    ), url("../image/agency.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    color: white;
+}
+
+.overlay h1 {
+    color: crimson;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.overlay h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.overlay p {
+    line-height: 1.7;
+}
+
+.signup-form {
+    width: 58%;
+    padding: 40px;
+}
+
+.signup-form h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.signup-form > p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 13px 0 7px;
+    font-weight: bold;
+}
+
+form input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+form input:focus {
+    border-color: crimson;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+/* button {
+    width: 100%;
+    padding: 14px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+} */
+
+button:hover {
+    background: #a50021;
+}
+
+.login {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login a, .back {
+    color: crimson;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media(max-width: 700px) {
+    .signup-container {
+        flex-direction: column;
+    }
+
+    .signup-image {
+        width: 100%;
+        min-height: 220px;
+    }
+
+    .signup-form {
+        width: 100%;
+        padding: 25px;
+    }
+}

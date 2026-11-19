@@ -1,0 +1,242 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    color: #171717;
+}
+
+.container p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Form */
+.form-box {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+    color: crimson;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: crimson;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darkred;
+}
+
+/* Existing Profiles */
+.profile-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.profile-box h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #171717;
+    color: white;
+}
+
+td a {
+    color: crimson;
+    text-decoration: none;
+}
+
+
+
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: #171717;
+    color: white;
+    padding: 25px 18px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+   
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.sidebar h2 span {
+    color: crimson;
+}
+
+.admin-label {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    padding: 13px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+    width: 18px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a {
+    background: crimson;
+    color: white;
+}
+
+.logout {
+    margin-top: auto;
+    padding: 13px;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid #444;
+}
+
+.logout i {
+    margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    min-width: 0;
+    margin-left: 230px;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.topbar h2 {
+    font-size: 25px;
+}
+
+.topbar p {
+    color: #777;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile i {
+    color: crimson;
+    font-size: 19px;
+}
+
+.admin-avatar {
+    width: 35px;
+    height: 35px;
+    background: crimson;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .form-box,
+    .profile-box {
+        padding: 15px;
+    }
+
+    .profile-box {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 550px;
+    }
+}

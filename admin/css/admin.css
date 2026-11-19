@@ -1,0 +1,418 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #222;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: #171717;
+    color: white;
+    padding: 25px 18px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+   
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.sidebar h2 span {
+    color: crimson;
+}
+
+.admin-label {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    padding: 13px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+    width: 18px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a {
+    background: crimson;
+    color: white;
+}
+
+.logout {
+    margin-top: auto;
+    padding: 13px;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid #444;
+}
+
+.logout i {
+    margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    min-width: 0;
+    margin-left: 230px;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.topbar h2 {
+    font-size: 25px;
+}
+
+.topbar p {
+    color: #777;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile i {
+    color: crimson;
+    font-size: 19px;
+}
+
+.admin-avatar {
+    width: 35px;
+    height: 35px;
+    background: crimson;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Welcome Section */
+.welcome {
+    background: #a80f2d;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.welcome h1 {
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.welcome p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.welcome i {
+    font-size: 65px;
+    opacity: 0.5;
+}
+
+/* Statistics Cards */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 22px;
+    border-radius: 9px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.stat-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.stat-icon.red {
+    background: #ffe1e5;
+    color: crimson;
+}
+
+.stat-icon.orange {
+    background: #fff0dc;
+    color: #e58b18;
+}
+
+.stat-icon.green {
+    background: #dcf5e7;
+    color: #16864c;
+}
+
+.stat-icon.blue {
+    background: #dceaff;
+    color: #2464bb;
+}
+
+.stat-card h3 {
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    color: #777;
+    font-size: 13px;
+}
+
+/* Quick Actions */
+.quick-actions {
+    background: white;
+    padding: 25px;
+    border-radius: 9px;
+    margin-bottom: 30px;
+}
+
+.quick-actions h2,
+.activities h2 {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.action-buttons a {
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #eee;
+    padding: 18px 10px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.action-buttons a i {
+    display: block;
+    font-size: 23px;
+    color: crimson;
+    margin-bottom: 12px;
+}
+
+.action-buttons a:hover {
+    background: #fff0f2;
+    border-color: crimson;
+}
+
+/* Recent Activities */
+.activities {
+    background: white;
+    padding: 25px;
+    border-radius: 9px;
+    margin-bottom: 30px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 550px;
+}
+
+th, td {
+    padding: 16px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+th {
+    color: #777;
+    background: #fafafa;
+}
+
+.status {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.published {
+    background: #dcf5e7;
+    color: #16864c;
+}
+
+.pending {
+    background: #fff0dc;
+    color: #bd7510;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .action-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .sidebar {
+        width: 65px;
+        padding: 20px 8px;
+    }
+
+    .sidebar h2 {
+        font-size: 17px;
+    }
+
+    .admin-label,
+    .sidebar ul li a:not(.active),
+    .logout {
+        font-size: 0;
+    }
+
+    .sidebar ul li a {
+        text-align: center;
+        padding: 13px 5px;
+        font-size: 0;
+    }
+
+    .sidebar ul li a i {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .sidebar ul li.active a {
+        font-size: 0;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .topbar h2 {
+        font-size: 20px;
+    }
+
+    .topbar p {
+        font-size: 11px;
+    }
+
+    .profile span {
+        display: none;
+    }
+
+    .welcome {
+        padding: 20px;
+    }
+
+    .welcome h1 {
+        font-size: 20px;
+    }
+
+    .welcome p {
+        font-size: 12px;
+    }
+
+    .welcome i {
+        font-size: 35px;
+    }
+
+    .stats {
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .stat-card h3 {
+        font-size: 22px;
+    }
+
+    .stat-card p {
+        font-size: 11px;
+    }
+
+    .action-buttons {
+        gap: 10px;
+    }
+
+    .action-buttons a {
+        font-size: 11px;
+    }
+
+    .activities,
+    .quick-actions {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | NFBI</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <!-- Font Awesome 6.5.1 Stable -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous"> -->
+
+</head>
+
+<style>
+    .to-top {
+        position: fixed;
+        background:linear-gradient(120deg,rgba(0, 0, 0, 0.329), crimson) ;
+        bottom: 20px;
+        right: 20px;
+        color: snow;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .to-top.active {
+        opacity: 1;
+    }
+</style>
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2> <i class="fa-solid fa-gem"></i> NBFI <br> <span>National Bureau Of Financial Investigations</span>
+                </h2> 
+
+            </div>
+
+            <input type="checkbox" id="menu">
+
+            <label for="menu" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="news.html">News & Media</a></li>
+                <li><a href="wanted.html">Wanted Persons</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Help & Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <button class="petition-btn"><a href="petition.html">
+                        Submit Petition
+                    </a> </button>
+
+                <button class="login-btn"> <a href="/user/user-dashboard.html">
+                        <i class="fa-solid fa-user"></i>Dashboard
+                    </a></button>
+            </div>
+
+        </nav>
+    </header>
+
+    
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="small-title">NATIONAL BUREAU OF FINANCIAL INVESTIGATION</p>
+
+            <h1>FIGHTING FINANCIAL CRIME.<br>
+                <span>PROTECTING OUR FUTURE.</span>
+            </h1>
+
+            <p class="hero-text">
+                Committed to investigating financial crimes,
+                promoting economic integrity and protecting
+                the nation's financial interests.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="about.html" class="btn-primary">Explore Our Mission</a>
+                <a href="petition.html" class="btn-outline">Report an Incident</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <div class="about-image">
+            <img src="../image/money.jpg" alt="Financial investigation">
+        </div>
+
+        <div class="about-content">
+            <p class="section-label">WHO WE ARE</p>
+            <h2>Committed to Justice and Financial Integrity</h2>
+
+            <p>
+                The National Bureau of Financial Investigation
+                (NBFI) is dedicated to preventing and investigating
+                financial and economic crimes.
+            </p>
+
+            <p>
+                Through intelligence, investigation and public
+                cooperation, we work towards a transparent,
+                accountable and secure financial environment.
+            </p>
+
+            <a href="about.html" class="read-btn">Discover More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+
+    <!-- STATISTICS SECTION -->
+    <section class="statistics">
+        <div class="section-heading">
+            <p class="section-label">OUR IMPACT</p>
+            <h2>Making a Difference</h2>
+        </div>
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <h2>250+</h2>
+                <p>Cases Investigated</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>180+</h2>
+                <p>Petitions Received</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>95+</h2>
+                <p>Cases Resolved</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>120+</h2>
+                <p>Public Reports</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- OPERATIONS SECTION -->
+    <section class="operations">
+        <div class="section-heading2">
+            <p class="section-label">WHAT WE DO</p>
+            <h2>Our Key Operations</h2>
+            <p>Working together to combat financial and economic crimes.</p>
+        </div>
+
+        <div class="operation-container">
+
+            <div class="operation-card">
+                <div class="operation-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                <h3>Financial Investigation</h3>
+                <p>
+                    Investigating suspicious financial activities
+                    and fraudulent transactions.
+                </p>
+            </div>
+
+            <div class="operation-card">
+                <div class="operation-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <h3>Economic Crime Prevention</h3>
+                <p>
+                    Promoting awareness and preventing economic
+                    crimes through effective investigations.
+                </p>
+            </div>
+
+            <div class="operation-card">
+                <div class="operation-icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                <h3>Asset Recovery</h3>
+                <p>
+                    Supporting lawful processes for the recovery
+                    of assets linked to financial crimes.
+                </p>
+            </div>
+
+            <div class="operation-card">
+                <div class="operation-icon"> <i class="fa-solid fa-envelope"></i></div>
+                <h3>Public Petitions</h3>
+                <p>
+                    Providing citizens with a platform to submit
+                    complaints and petitions.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- WANTED PERSONS SECTION -->
+    <section class="wanted">
+        <div class="wanted-content">
+            <p class="section-label">PUBLIC NOTICES</p>
+            <h2>Individuals Under Investigation</h2>
+            <p>
+                View official public notices and information
+                about individuals sought by the agency.
+            </p>
+
+            <a href="wanted.html" class="btn-primary">
+                View Public Notices <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="wanted-image">
+            <img src="../image/investigationreport.jpg" alt="Investigation notice">
+        </div>
+    </section>
+
+
+    <!-- NEWS SECTION -->
+    <section class="news">
+        <div class="section-heading3">
+            <p class="section-label">STAY INFORMED</p>
+            <h2>Latest News & Updates</h2>
+        </div>
+
+        <div class="news-container">
+
+            <div class="news-card">
+                <img src="../image/agencynews.jpg" alt="Agency news">
+                <div class="news-content">
+                    <span>OFFICIAL STATEMENT</span>
+                    <h3>NBFI Reaffirms Commitment to Financial Accountability</h3>
+                    <a href="read.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="../image/investigation update.jpg" alt="Investigation news">
+                <div class="news-content">
+                    <span>INVESTIGATION UPDATE</span>
+                    <h3>Agency Announces New Financial Investigation Initiative</h3>
+                    <a href="read.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="../image/awareness.jpg" alt="Public awareness">
+                <div class="news-content">
+                    <span>PUBLIC AWARENESS</span>
+                    <h3>Citizens Encouraged to Report Financial Fraud</h3>
+                    <a href="read.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <h2>Be Part of the Fight Against Financial Crime</h2>
+        <p>
+            Your information can help promote accountability
+            and protect our financial system.
+        </p>
+
+        <a href="petition.html" class="btn-white">
+            Submit a Petition <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- ABOUT -->
+            <div class="footer-about">
+                <h2>NBFI</h2>
+
+                <p>
+                    Promoting financial safety, accountability
+                    and access to justice through reporting,
+                    investigations and public awareness.
+                </p>
+
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News & Media</a></li>
+                    <li><a href="wanted.html">Wanted Persons</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Help & Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!-- OUR SERVICES -->
+            <div class="footer-links">
+                <h3>Our Services</h3>
+
+                <ul>
+                    <li><a href="report.html">Report an Incident</a></li>
+                    <li><a href="investigations.html">Investigations</a></li>
+                    <li><a href="auctions.html">Property Auctions</a></li>
+                    <li><a href="petition.html">Submit a Petition</a></li>
+                    <li><a href="tracking.html">Track a Report</a></li>
+                </ul>
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+
+                <p>Email: info@nbfi.com</p>
+                <p>Phone: +234 800 000 0000</p>
+                <p>Address: Nigeria</p>
+
+                <button class="contact-btn"><a href="contact.html">
+                        Get In Touch
+                    </a> </button>
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM FOOTER -->
+        <div class="footer-bottom">
+
+            <p>
+                @ 2026 NBFI. All Rights Reserved.
+            </p>
+
+            <div>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+     <span id="totop" class="to-top"><i class="fa-solid fa-arrow-up-long"></i></span>
+
+    <script src="../js/index2.js"></script>
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</html>

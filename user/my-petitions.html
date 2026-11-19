@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Petitions - NBFI</title>
+    <link rel="stylesheet" href="./css/user-dashboard.css">
+    <link rel="stylesheet" href="./css/my-petition.css">
+    <!-- Font Awesome 6.5.1 Stable -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>NBFI</h2>
+            <p class="menu-title">USER MENU</p>
+
+            <nav>
+                <a href="user-dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="my-reports.html"><i class="fas fa-newspaper"></i> My Reports</a>
+                <a href="my-petitions.html"  class="active"><i class="fas fa-file-alt"></i> My Petitions</a>
+                <a href="land-auctions.html"> <i class="fas fa-landmark"></i> Land Auctions</a>
+                <a href="my-profile.html"><i class="fa-solid fa-user"></i> My profile</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="../html/index.html" class="view-website">View Website</a>
+            </nav>
+
+            <a href="#" class="logout" id="logoutBtn"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+        </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <header>
+            <div>
+                <h1>My Petitions</h1>
+                <p>Manage and monitor your submitted petitions.</p>
+            </div>
+
+            <div class="profile">
+                <!-- CHANGED: ids for JS -->
+                <div class="profile-icon" id="profileIcon">U</div>
+                <span id="profileName">User Account</span>
+            </div>
+        </header>
+
+
+        <!-- WELCOME SECTION -->
+        <section class="welcome">
+            <!-- CHANGED: name injected -->
+            <h2>Your Voice Matters, <span id="welcomeName">User</span></h2>
+            <p>
+                Track your petitions and stay informed about their
+                progress. Thank you for contributing to accountability
+                and justice.
+            </p>
+        </section>
+
+
+        <!-- PETITION STATISTICS -->
+        <section class="stats">
+            <div class="stat-card">
+                <h3>Total Petitions</h3>
+                <h2>06</h2>
+                <p>Petitions submitted</p>
+            </div>
+            <div class="stat-card">
+                <h3>Under Review</h3>
+                <h2>02</h2>
+                <p>Currently being reviewed</p>
+            </div>
+            <div class="stat-card">
+                <h3>Approved</h3>
+                <h2>04</h2>
+                <p>Successfully approved</p>
+            </div>
+        </section>
+
+
+        <!-- PETITION HISTORY -->
+        <section class="petition-section">
+            <div class="section-heading">
+                <h2>Petition History</h2>
+                <a href="submit-petition.html">+ Submit New Petition</a>
+            </div>
+
+            <div class="petition-card">
+                <div class="petition-details">
+                    <h3>Request for Investigation</h3>
+                    <p>Petition ID: NBP001</p>
+                    <p>Submitted: 12 November 2026</p>
+                    <p>Category: Financial Misconduct</p>
+                </div>
+                <span class="pending">Under Review</span>
+            </div>
+
+            <div class="petition-card">
+                <div class="petition-details">
+                    <h3>Public Accountability Petition</h3>
+                    <p>Petition ID: NBP002</p>
+                    <p>Submitted: 08 November 2026</p>
+                    <p>Category: Public Interest</p>
+                </div>
+                <span class="approved">Approved</span>
+            </div>
+
+            <div class="petition-card">
+                <div class="petition-details">
+                    <h3>Request for Financial Investigation</h3>
+                    <p>Petition ID: NBP003</p>
+                    <p>Submitted: 05 November 2026</p>
+                    <p>Category: Financial Crime</p>
+                </div>
+                <span class="pending">Under Review</span>
+            </div>
+
+            <div class="petition-card">
+                <div class="petition-details">
+                    <h3>Property Fraud Investigation</h3>
+                    <p>Petition ID: NBP004</p>
+                    <p>Submitted: 01 November 2026</p>
+                    <p>Category: Property Fraud</p>
+                </div>
+                <span class="approved">Approved</span>
+            </div>
+        </section>
+
+
+        <!-- GUIDELINES -->
+        <section class="information">
+            <h3>Petition Guidelines</h3>
+            <p>
+                Ensure that all petitions contain accurate information
+                and clearly explain the issue being addressed. Keep your
+                petition ID for future reference.
+            </p>
+        </section>
+
+
+        
+    </main>
+
+</div>
+
+
+<!-- ============================================================
+     AUTH — same pattern as the other dashboard pages
+     ============================================================ -->
+<script src="/js/auth.js"></script>
+<script>
+    // 1) Guard
+    if (!requireAuth('/html/login.html')) {
+        throw new Error('Not authenticated');
+    }
+
+    // 2) Fill user info
+    const session = getSession();
+    if (session) {
+        const firstName = session.name.split(' ')[0];
+        const initials  = session.name.split(' ').map(p => p[0]).join('').toUpperCase().slice(0, 2);
+
+        document.getElementById('welcomeName').textContent = firstName;
+        document.getElementById('profileName').textContent = session.name;
+        document.getElementById('profileIcon').textContent = initials;
+    }
+
+    // 3) Logout
+    document.getElementById('logoutBtn')
+        .addEventListener('click', e => {
+            e.preventDefault();
+            logout('/html/login.html');
+        });
+</script>
+</body>
+</html>

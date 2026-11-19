@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | NFBI</title>
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <!-- Font Awesome 6.5.1 Stable -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .to-top {
+        position: fixed;
+        background:linear-gradient(120deg,rgba(0, 0, 0, 0.329), crimson) ;
+        bottom: 20px;
+        right: 20px;
+        color: snow;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .to-top.active {
+        opacity: 1;
+    }
+</style>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2> <i class="fa-solid fa-gem"></i> NBFI <br>
+                    <span>National Bureau Of Financial Investigations</span>
+                </h2>
+            </div>
+
+            <input type="checkbox" id="menu">
+
+            <label for="menu" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html" class="active">News & Media</a></li>
+                <li><a href="wanted.html">Wanted Persons</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Help & Contact</a></li>
+            </ul>
+
+            <!-- CHANGED: filled by auth.js -->
+            <div class="nav-buttons"><!-- filled by auth.js --></div>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <div class="hero-body">
+        <section class="hero bg-img">
+            <div class="hero-content">
+                <b class="small-text"> STAY INFORMED <i class="fa-solid fa-circle"></i> STAY AWARE <i
+                        class="fa-solid fa-circle"></i> BE CONNECTED</b>
+
+                <h1>
+                    Stay updated with the latest news<br>
+                    and <span>Current affairs.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Stay tuned for our agency updates, press <br> releases, news & updates.
+                </p>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- LATEST NEWS -->
+    <section class="latest-news">
+
+        <div class="section-heading">
+            <h2>Latest News</h2>
+            <p>Explore our latest reports and announcements.</p>
+        </div>
+
+        <div class="news-grid">
+
+            <div class="news-card1">
+                <div class="news-content">
+                    <span>AGENCY NEWS</span>
+                    <h3>The NBFI Announces New Security Initiative</h3>
+                    <p>
+                        An overview of new efforts aimed at
+                        improving public safety and awareness.
+                    </p>
+                    <a href="read.html">Read More →</a>
+                </div>
+            </div>
+
+            <div class="news-card2">
+                <div class="news-content">
+                    <span>INVESTIGATIONS</span>
+                    <h3>Improving Investigation and Reporting Systems</h3>
+                    <p>
+                        Learn about the importance of effective
+                        reporting and responsible investigations.
+                    </p>
+                    <a href="read.html">Read More →</a>
+                </div>
+            </div>
+
+            <div class="news-card3">
+                <div class="news-content">
+                    <span>ANNOUNCEMENTS</span>
+                    <h3>Public Awareness and Community Engagement</h3>
+                    <p>
+                        Promoting collaboration between agencies
+                        and members of the public.
+                    </p>
+                    <a href="read.html">Read More →</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MEDIA GALLERY -->
+    <section class="media-section">
+
+        <div class="section-heading">
+            <h2>Media Gallery</h2>
+            <p>A look at our activities, events and operations.</p>
+        </div>
+
+        <div class="gallery">
+
+            <div class="main-img">
+                <img src="../image/AWARD.jpg" alt="Agency meeting">
+            </div>
+
+            <div>
+                <div style="display: flex; gap: 20px;">
+                    <img src="../image/conf.jpg" alt="Team discussion">
+                    <img src="../image/team.jpg" alt="Training session">
+                </div>
+                <div style="display: flex; gap: 20px; padding-top: 20px;">
+                    <img src="../image/cyber opt.jpg" alt="Team discussion">
+                    <img src="../image/edu.jpg" alt="Training session">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="more-images">
+            <img src="../image/march.jpg" alt="Team discussion">
+            <img src="../image/training.jpg" alt="Training session">
+            <img src="../image/arrest.jpg" alt="Training session">
+        </div>
+
+    </section>
+
+
+    <!-- PRESS RELEASE -->
+    <section class="press-section">
+
+        <h2>Press Releases</h2>
+
+        <div class="press-item">
+            <div>
+                <span>06 NOVEMBER 2026</span>
+                <h3>Official Agency Statement</h3>
+                <p>Latest information and announcements from CipherWatch.</p>
+            </div>
+            <a href="read.html">Read →</a>
+        </div>
+
+        <div class="press-item">
+            <div>
+                <span>02 NOVEMBER 2026</span>
+                <h3>Public Safety Awareness Update</h3>
+                <p>Important information for public awareness and safety.</p>
+            </div>
+            <a href="read.html">Read →</a>
+        </div>
+
+        <div class="press-item">
+            <div>
+                <span>28 OCTOBER 2026</span>
+                <h3>Agency Community Engagement</h3>
+                <p>Updates on our commitment to community cooperation.</p>
+            </div>
+            <a href="read.html">Read →</a>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- ABOUT -->
+            <div class="footer-about">
+                <h2>NBFI</h2>
+                <p>
+                    Promoting financial safety, accountability
+                    and access to justice through reporting,
+                    investigations and public awareness.
+                </p>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News & Media</a></li>
+                    <li><a href="wanted.html">Wanted Persons</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Help & Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- OUR SERVICES -->
+            <div class="footer-links">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="contact.html">Report an Incident</a></li>
+                    <li><a href="login.html">Investigations</a></li>
+                    <li><a href="login.html">Property Auctions</a></li>
+                    <li><a href="petition.html">Submit a Petition</a></li>
+                    <li><a href="login.html">Track a Report</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@nbfi.com</p>
+                <p>Phone: +234 800 000 0000</p>
+                <p>Address: Nigeria</p>
+                <button class="contact-btn"><a href="contact.html">Get In Touch</a></button>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="footer-bottom">
+            <p>@ 2026 NBFI. All Rights Reserved.</p>
+            <div>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms &  Conditions</a>
+            </div>
+        </div>
+
+    </footer>
+ <span id="totop" class="to-top"><i class="fa-solid fa-arrow-up-long"></i></span>
+
+    <script src="../js/index2.js"></script>
+
+    <!-- Auth — populates navbar login/dashboard button -->
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>
