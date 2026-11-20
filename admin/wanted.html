@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>NBFI - Wanted Persons Admin</title>
     <link rel="stylesheet" href="./css/wanted.css">
@@ -16,7 +17,7 @@
         <p class="admin-label">ADMIN PANEL</p>
 
         <ul>
-            <li >
+            <li>
                 <a href="admin.html"><i class="fas fa-chart-line"></i> Dashboard</a>
             </li>
             <li class="active">
@@ -61,89 +62,90 @@
                 <span>Admin</span>
             </div>
         </div>
-    <div class="container">
+        <div class="container">
 
-        <h1>Wanted Persons Management</h1>
-        <p>Manage wanted person profiles and information.</p>
+            <h1>Wanted Persons Management</h1>
+            <p>Manage wanted person profiles and information.</p>
 
-        <!-- Add New Person -->
-        <div class="form-box">
+            <!-- Add New Person -->
+            <div class="form-box">
 
-            <h2>Add New Wanted Person</h2>
+                <h2>Add New Wanted Person</h2>
 
-            <form>
+                <form>
 
-                <label>Full Name</label>
-                <input type="text" placeholder="Enter full name">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter full name">
 
-                <label>Age</label>
-                <input type="number" placeholder="Enter age">
+                    <label>Age</label>
+                    <input type="number" placeholder="Enter age">
 
-                <label>Offence</label>
-                <input type="text" placeholder="Enter offence">
+                    <label>Offence</label>
+                    <input type="text" placeholder="Enter offence">
 
-                <label>Location</label>
-                <input type="text" placeholder="Enter location">
+                    <label>Location</label>
+                    <input type="text" placeholder="Enter location">
 
-                <label>Upload Picture</label>
-                <input type="file" accept="image/*">
+                    <label>Upload Picture</label>
+                    <input type="file" accept="image/*">
 
-                <label>Case Description</label>
-                <textarea rows="5" placeholder="Enter case description"></textarea>
+                    <label>Case Description</label>
+                    <textarea rows="5" placeholder="Enter case description"></textarea>
 
-                <button type="submit">Add Profile</button>
+                    <button type="submit">Add Profile</button>
 
-            </form>
+                </form>
+
+            </div>
+
+
+            <!-- Existing Profiles -->
+            <div class="profile-box">
+
+                <h2>Existing Profiles</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Offence</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+
+                    <tr>
+                        <td>Sample Person One</td>
+                        <td>Financial Fraud</td>
+                        <td>Lagos</td>
+                        <td>Active</td>
+                        <td><a href="#">View</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sample Person Two</td>
+                        <td>Cybercrime</td>
+                        <td>Abuja</td>
+                        <td>Under Review</td>
+                        <td><a href="#">View</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sample Person Three</td>
+                        <td>Money Laundering</td>
+                        <td>Enugu</td>
+                        <td>Active</td>
+                        <td><a href="#">View</a></td>
+                    </tr>
+
+                </table>
+
+            </div>
 
         </div>
 
 
-        <!-- Existing Profiles -->
-        <div class="profile-box">
-
-            <h2>Existing Profiles</h2>
-
-            <table>
-
-                <tr>
-                    <th>Full Name</th>
-                    <th>Offence</th>
-                    <th>Location</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
-
-                <tr>
-                    <td>Sample Person One</td>
-                    <td>Financial Fraud</td>
-                    <td>Lagos</td>
-                    <td>Active</td>
-                    <td><a href="#">View</a></td>
-                </tr>
-
-                <tr>
-                    <td>Sample Person Two</td>
-                    <td>Cybercrime</td>
-                    <td>Abuja</td>
-                    <td>Under Review</td>
-                    <td><a href="#">View</a></td>
-                </tr>
-
-                <tr>
-                    <td>Sample Person Three</td>
-                    <td>Money Laundering</td>
-                    <td>Enugu</td>
-                    <td>Active</td>
-                    <td><a href="#">View</a></td>
-                </tr>
-
-            </table>
-
-        </div>
-
-    </div>
-
-   
 
 </body>
+
 </html>

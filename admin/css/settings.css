@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-   
+
     position: fixed;
     height: 100%;
 }
@@ -115,7 +115,7 @@ body {
     color: #a30d25;
 }
 
-.settings-card > p {
+.settings-card>p {
     color: #888;
     font-size: 14px;
     margin-bottom: 22px;

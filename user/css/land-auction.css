@@ -15,10 +15,10 @@ body {
     min-height: 100vh;
 }
 
-.main-content{
+.main-content {
     margin-left: 250px;
     padding: 40px;
-    
+
 }
 
 /* Sidebar */
@@ -132,7 +132,7 @@ body {
     color: #777;
 }
 
-.container > h2 {
+.container>h2 {
     margin-bottom: 20px;
 }
 
@@ -194,7 +194,8 @@ body {
     font-size: 21px;
 }
 
-.details, .bid {
+.details,
+.bid {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -228,7 +229,9 @@ body {
 }
 
 @media (max-width: 600px) {
-    .stats, .land-grid {
+
+    .stats,
+    .land-grid {
         grid-template-columns: 1fr;
     }
 

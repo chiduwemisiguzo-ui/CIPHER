@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-   
+
     position: fixed;
     height: 100%;
 }
@@ -148,7 +148,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;

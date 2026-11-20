@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,104 +14,101 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <a href="land-details.html" class="back">← Back to Land Details</a>
+        <a href="land-details.html" class="back">← Back to Land Details</a>
 
-    <div class="heading">
-        <h1>Place Your Bid</h1>
-        <p>Enter your offer for this property below.</p>
-    </div>
+        <div class="heading">
+            <h1>Place Your Bid</h1>
+            <p>Enter your offer for this property below.</p>
+        </div>
 
-    <div class="content">
+        <div class="content">
 
-        <!-- LAND INFORMATION -->
+            <!-- LAND INFORMATION -->
 
-        <div class="land-card">
+            <div class="land-card">
 
-            <img src="../image/land3.jpg" alt="Auction land">
+                <img src="../image/land3.jpg" alt="Auction land">
 
-            <div class="land-info">
-                <span class="status">Auction Ongoing</span>
+                <div class="land-info">
+                    <span class="status">Auction Ongoing</span>
 
-                <h2>Residential Land in Lekki</h2>
+                    <h2>Residential Land in Lekki</h2>
 
-                <p> <i class="fa-solid fa-location-dot"></i> Lekki Phase 2, Lagos State</p>
+                    <p> <i class="fa-solid fa-location-dot"></i> Lekki Phase 2, Lagos State</p>
 
-                <p>Land Size: 500 sqm</p>
+                    <p>Land Size: 500 sqm</p>
 
-                <hr>
+                    <hr>
 
-                <div class="price">
-                    <small>Starting Price</small>
-                    <h2>₦5,000,000</h2>
+                    <div class="price">
+                        <small>Starting Price</small>
+                        <h2>₦5,000,000</h2>
+                    </div>
+
+                    <div class="price">
+                        <small>Current Highest Bid</small>
+                        <h2>₦5,500,000</h2>
+                    </div>
+
+                    <div class="price">
+                        <small>Minimum Bid Increment</small>
+                        <h2>₦100,000</h2>
+                    </div>
                 </div>
 
-                <div class="price">
-                    <small>Current Highest Bid</small>
-                    <h2>₦5,500,000</h2>
-                </div>
+            </div>
 
-                <div class="price">
-                    <small>Minimum Bid Increment</small>
-                    <h2>₦100,000</h2>
-                </div>
+
+            <!-- BIDDING FORM -->
+
+            <div class="bid-card">
+
+                <h2>Submit Your Offer</h2>
+
+                <p class="description">
+                    Enter an amount higher than the current
+                    highest bid to participate in this auction.
+                </p>
+
+                <form>
+
+                    <label>Property ID</label>
+                    <input type="text" value="NBFI-LA001" readonly>
+
+                    <label>Your Bid Amount (₦)</label>
+                    <input type="number" placeholder="Enter your bid amount" min="5600000" required>
+
+                    <small class="hint">
+                        Minimum acceptable bid: ₦5,600,000
+                    </small>
+
+                    <label>Additional Message (Optional)</label>
+                    <textarea rows="4" placeholder="Enter any additional information..."></textarea>
+
+                    <div class="terms">
+                        <input type="checkbox" required>
+                        <span>
+                            I agree to the auction terms and conditions
+                            and confirm that my bid is genuine.
+                        </span>
+                    </div>
+
+                    <button type="submit">Submit My Bid</button>
+
+                </form>
+
+                <p class="warning">
+                    Please review your bid carefully before submitting.
+                </p>
+
             </div>
 
         </div>
 
-
-        <!-- BIDDING FORM -->
-
-        <div class="bid-card">
-
-            <h2>Submit Your Offer</h2>
-
-            <p class="description">
-                Enter an amount higher than the current
-                highest bid to participate in this auction.
-            </p>
-
-            <form>
-
-                <label>Property ID</label>
-                <input type="text" value="NBFI-LA001" readonly>
-
-                <label>Your Bid Amount (₦)</label>
-                <input type="number"
-                       placeholder="Enter your bid amount"
-                       min="5600000"
-                       required>
-
-                <small class="hint">
-                    Minimum acceptable bid: ₦5,600,000
-                </small>
-
-                <label>Additional Message (Optional)</label>
-                <textarea rows="4"
-                    placeholder="Enter any additional information..."></textarea>
-
-                <div class="terms">
-                    <input type="checkbox" required>
-                    <span>
-                        I agree to the auction terms and conditions
-                        and confirm that my bid is genuine.
-                    </span>
-                </div>
-
-                <button type="submit">Submit My Bid</button>
-
-            </form>
-
-            <p class="warning">
-                Please review your bid carefully before submitting.
-            </p>
-
-        </div>
-
     </div>
 
-</div>
-
 </body>
+
 </html>

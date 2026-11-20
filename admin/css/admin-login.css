@@ -23,7 +23,7 @@ body {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
 }
 
 /* LEFT SECTION */
@@ -31,7 +31,7 @@ body {
 .left-section {
     width: 55%;
     background-image:
-    url("/image/admin building.jpg");
+        url("/image/admin building.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -43,11 +43,9 @@ body {
 .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        130deg,
-        rgba(0,0,0,0.9),
-        rgba(80, 0, 15, 0.6)
-    );
+    background: linear-gradient(130deg,
+            rgba(0, 0, 0, 0.9),
+            rgba(80, 0, 15, 0.6));
 }
 
 .left-content {
@@ -200,7 +198,7 @@ body {
 
 .input-box:focus-within {
     border-color: crimson;
-    box-shadow: 0 0 5px rgba(220,20,60,0.2);
+    box-shadow: 0 0 5px rgba(220, 20, 60, 0.2);
 }
 
 .input-box i {
@@ -254,9 +252,9 @@ button {
     transition: 0.3s;
 }
 
-button a{
-color: snow;
-text-decoration: none;
+button a {
+    color: snow;
+    text-decoration: none;
 }
 
 button i {

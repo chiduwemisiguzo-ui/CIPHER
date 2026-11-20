@@ -44,7 +44,8 @@ body {
 
 /* LAND CARD */
 
-.land-card, .bid-card {
+.land-card,
+.bid-card {
     background: white;
     border-radius: 8px;
     overflow: hidden;
