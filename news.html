@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petition | NBFI</title>
-    <link rel="stylesheet" href="../css/petition.css">
-    <link rel="stylesheet" href="../css/navbar.css">
+    <title>News | NFBI</title>
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <!-- Font Awesome 6.5.1 Stable -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -30,6 +30,7 @@
     }
 </style>
 <body>
+
     <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
@@ -51,7 +52,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="news.html">News & Media</a></li>
+                <li><a href="news.html" class="active">News & Media</a></li>
                 <li><a href="wanted.html">Wanted Persons</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="contact.html">Help & Contact</a></li>
@@ -64,115 +65,145 @@
     </header>
 
 
-    <section class="petition-hero">
-        <h1>Submit A Petition</h1>
-        <p>
-            Your voice matters. Submit a petition to bring
-            important issues to the attention of the NBFI.
-        </p>
-    </section>
+    <!-- Hero Section -->
+    <div class="hero-body">
+        <section class="hero bg-img">
+            <div class="hero-content">
+                <b class="small-text"> STAY INFORMED <i class="fa-solid fa-circle"></i> STAY AWARE <i
+                        class="fa-solid fa-circle"></i> BE CONNECTED</b>
 
+                <h1>
+                    Stay updated with the latest news<br>
+                    and <span>Current affairs.</span>
+                </h1>
 
-    <div class="petition-heading">
-        <h2>Petition Submission Form</h2>
-        <p>Please provide accurate information in the fields below.</p>
+                <p class="hero-description">
+                    Stay tuned for our agency updates, press <br> releases, news & updates.
+                </p>
+            </div>
+        </section>
     </div>
 
-    <section class="petition-container">
-        <form>
-            <h3>01. Personal Information</h3>
 
-            <div class="form-grid">
-                <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="Enter your full name">
-                </div>
+    <!-- LATEST NEWS -->
+    <section class="latest-news">
 
-                <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="Enter your email">
-                </div>
+        <div class="section-heading">
+            <h2>Latest News</h2>
+            <p>Explore our latest reports and announcements.</p>
+        </div>
 
-                <div class="form-group">
-                    <label>Phone Number</label>
-                    <input type="tel" placeholder="Enter phone number">
-                </div>
+        <div class="news-grid">
 
-                <div class="form-group">
-                    <label>State</label>
-                    <input type="text" placeholder="Enter your state">
+            <div class="news-card1">
+                <div class="news-content">
+                    <span>AGENCY NEWS</span>
+                    <h3>The NBFI Announces New Security Initiative</h3>
+                    <p>
+                        An overview of new efforts aimed at
+                        improving public safety and awareness.
+                    </p>
+                    <a href="read.html">Read More →</a>
                 </div>
             </div>
-        </form>
-    </section>
 
-    <section class="petition-container">
-        <form action="">
-            <h3>02. Petition Details</h3>
-
-            <div class="form-group">
-                <label>Petition Title</label>
-                <input type="text" placeholder="Enter petition title">
+            <div class="news-card2">
+                <div class="news-content">
+                    <span>INVESTIGATIONS</span>
+                    <h3>Improving Investigation and Reporting Systems</h3>
+                    <p>
+                        Learn about the importance of effective
+                        reporting and responsible investigations.
+                    </p>
+                    <a href="read.html">Read More →</a>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Petition Category</label>
-                <select>
-                    <option>Select a category</option>
-                    <option>Financial Fraud</option>
-                    <option>Economic Crimes</option>
-                    <option>Corruption</option>
-                    <option>Money Laundering</option>
-                    <option>Property Fraud</option>
-                    <option>Other</option>
-                </select>
+            <div class="news-card3">
+                <div class="news-content">
+                    <span>ANNOUNCEMENTS</span>
+                    <h3>Public Awareness and Community Engagement</h3>
+                    <p>
+                        Promoting collaboration between agencies
+                        and members of the public.
+                    </p>
+                    <a href="read.html">Read More →</a>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Location of Incident</label>
-                <input type="text" placeholder="Enter incident location">
-            </div>
+        </div>
 
-            <div class="form-group">
-                <label>Petition Description</label>
-                <textarea rows="7" placeholder="Explain the issue you want CipherWatch to investigate..."></textarea>
-            </div>
-        </form>
     </section>
 
 
-    <section class="petition-container">
-        <form action="">
-            <h3>03. Supporting Documents</h3>
+    <!-- MEDIA GALLERY -->
+    <section class="media-section">
 
-            <div class="form-group">
-                <label>Upload Evidence (Optional)</label>
-                <input type="file" multiple>
-                <small>Upload relevant documents or images.</small>
+        <div class="section-heading">
+            <h2>Media Gallery</h2>
+            <p>A look at our activities, events and operations.</p>
+        </div>
+
+        <div class="gallery">
+
+            <div class="main-img">
+                <img src="../image/AWARD.jpg" alt="Agency meeting">
             </div>
 
-            <div class="anonymous">
-                <input type="checkbox" id="anonymous">
-                <label for="anonymous">
-                    I wish to submit this petition anonymously.
-                </label>
+            <div>
+                <div style="display: flex; gap: 20px;">
+                    <img src="../image/conf.jpg" alt="Team discussion">
+                    <img src="../image/team.jpg" alt="Training session">
+                </div>
+                <div style="display: flex; gap: 20px; padding-top: 20px;">
+                    <img src="../image/cyber opt.jpg" alt="Team discussion">
+                    <img src="../image/edu.jpg" alt="Training session">
+                </div>
             </div>
 
-            <div class="agreement">
-                <input type="checkbox" required>
-                <label>
-                    I confirm that the information provided is accurate
-                    to the best of my knowledge.
-                </label>
+        </div>
+
+        <div class="more-images">
+            <img src="../image/march.jpg" alt="Team discussion">
+            <img src="../image/training.jpg" alt="Training session">
+            <img src="../image/arrest.jpg" alt="Training session">
+        </div>
+
+    </section>
+
+
+    <!-- PRESS RELEASE -->
+    <section class="press-section">
+
+        <h2>Press Releases</h2>
+
+        <div class="press-item">
+            <div>
+                <span>06 NOVEMBER 2026</span>
+                <h3>Official Agency Statement</h3>
+                <p>Latest information and announcements from CipherWatch.</p>
             </div>
+            <a href="read.html">Read →</a>
+        </div>
 
-            <button type="submit">SUBMIT PETITION</button>
+        <div class="press-item">
+            <div>
+                <span>02 NOVEMBER 2026</span>
+                <h3>Public Safety Awareness Update</h3>
+                <p>Important information for public awareness and safety.</p>
+            </div>
+            <a href="read.html">Read →</a>
+        </div>
 
-            <p class="privacy">
-                Your information should be handled confidentially
-                and in accordance with applicable privacy laws.
-            </p>
-        </form>
+        <div class="press-item">
+            <div>
+                <span>28 OCTOBER 2026</span>
+                <h3>Agency Community Engagement</h3>
+                <p>Updates on our commitment to community cooperation.</p>
+            </div>
+            <a href="read.html">Read →</a>
+        </div>
+
     </section>
 
 
@@ -213,7 +244,7 @@
             <!-- OUR SERVICES -->
             <div class="footer-links">
                 <h3>Our Services</h3>
-                 <ul>
+                <ul>
                     <li><a href="contact.html">Report an Incident</a></li>
                     <li><a href="login.html">Investigations</a></li>
                     <li><a href="login.html">Property Auctions</a></li>
@@ -238,7 +269,7 @@
             <p>@ 2026 NBFI. All Rights Reserved.</p>
             <div>
                 <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
+                <a href="terms.html">Terms &  Conditions</a>
             </div>
         </div>
 
